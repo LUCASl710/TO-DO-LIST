@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: arial,sans-serif;
+}
+
+body{
+    background-color: #294cac;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.todo-container{
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 350px;
+}
+
+h1{
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.input-group{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+input{
+    flex: 1;
+    padding: 8px;
+}
+
+button{
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+ul{
+    list-style: none;
+
+}
+
+li{
+    padding: 8px;
+    background: #eee;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
