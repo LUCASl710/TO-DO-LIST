@@ -25,14 +25,14 @@ function renderTodos() {
     });
 }
 
-function addTpdp(text){
+function addTodos(text){
     const newTodo = {
         id: Date.now,
         text: text,
         completed: false
     };
     todos.push(newTodo);
-    saveTodo();
+    saveTodos();
     renderTodos();
 }
 
@@ -58,7 +58,7 @@ function loadTodos(){
 addButton.addEventListener("click", () => {
     if(input.ariaValueMax.trim() === "") return;
 
-    addTpdp(input.value.trim())
+    addTodos(input.value.trim())
     input.value = "";
 })
 
